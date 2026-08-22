@@ -64,5 +64,18 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-HiJoJo Partners is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+HiJoJo Partners Inc. (HiJoJo Partners株式会社) is a Tokyo-based independent asset management and
+fintech group, established in November 2017 and registered with the Director of the Kanto Local
+Finance Bureau (No. 3065) for Type II Financial Instruments Business, Investment Management
+Business, and Investment Advisory and Agency Business. The firm forms, sells and manages funds
+that give Japanese institutional and individual investors access to late-stage private and
+pre-IPO companies, and works to develop Japan's secondary market for unlisted shares.
+
+**No public API.** As of 2026-08-22 the company publishes no developer portal, no OpenAPI /
+GraphQL / AsyncAPI specification, no SDK, no MCP server, no agent card and no `/.well-known/`
+document on any host it operates. Investor-facing functionality is delivered only as an
+authenticated member web application. See `x-coverage` in `apis.yml` for the probes behind that
+statement.
+
+- https://www.hijojo-partners.com/
+- https://www.hijojo.com/

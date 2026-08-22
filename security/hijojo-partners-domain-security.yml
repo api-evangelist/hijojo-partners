@@ -1,0 +1,40 @@
+generated: '2026-08-22'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.hijojo-partners.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 16 23:59:59 2026 GMT
+  hsts: false
+- host: www.hijojo.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Dec 29 14:59:00 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+  include_subdomains: false
+- host: members.hijojo.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Dec 29 14:59:00 2026 GMT
+  hsts: true
+  hsts_max_age: 31556952
+  include_subdomains: true
+domains:
+- domain: hijojo-partners.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: false
+- domain: hijojo.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine
+note: 'Extended beyond the apis.yml Website host: the retail platform (www.hijojo.com)
+  and the authenticated member application (members.hijojo.com) were probed directly
+  on 2026-08-22. Both serve HSTS; the corporate Webflow site does not. hijojo-partners.com
+  publishes SPF but no DMARC record; hijojo.com publishes DMARC p=quarantine. Neither
+  domain is DNSSEC-signed and neither publishes a CAA record.'

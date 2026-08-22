@@ -1,0 +1,54 @@
+# HiJoJo Partners
+
+> HiJoJo Partners Inc. (HiJoJo Partners株式会社) is a Tokyo-based independent asset management
+> and fintech group, established November 2017, registered with the Director of the Kanto Local
+> Finance Bureau (No. 3065) for Type II Financial Instruments Business, Investment Management
+> Business, and Investment Advisory and Agency Business. It forms, sells and manages funds that
+> give Japanese institutional and individual investors access to late-stage private and pre-IPO
+> companies, and works to develop Japan's secondary market for unlisted shares.
+
+## Important for agents
+
+HiJoJo Partners publishes **no public API**. As of 2026-08-22 there is no developer portal, no
+OpenAPI/Swagger/GraphQL/AsyncAPI specification, no SDK, no MCP server, no A2A agent card, no
+webhook catalog and no /.well-known/ document on any host the company operates
+(www.hijojo-partners.com, hijojo.com, www.hijojo.com, members.hijojo.com). DNS enumeration found
+no api., dev., developer., docs., portal., app. or mcp. host on either domain. Investor-facing
+functionality is delivered only as an authenticated member web application at members.hijojo.com,
+which requires an account and, for the retail platform, a stated minimum of 30M JPY in investable
+assets. Do not attempt to construct API calls against these hosts; there is no contract to call.
+
+## Company
+
+- [Corporate site](https://www.hijojo-partners.com/): Japanese/English corporate site
+- [Company overview](https://www.hijojo-partners.com/en/about/company): legal name, address, capital, registrations
+- [Services](https://www.hijojo-partners.com/en/service): the three commercial lines
+- [News](https://www.hijojo-partners.com/en/news): dated company announcements
+- [Contact](https://www.hijojo-partners.com/en/inquiry): inquiry form
+
+## Service lines
+
+- [HiJoJo Prime](https://www.hijojo-partners.com/en/hijojo-prime): in-person advisory, minimum 100M JPY investable assets
+- [HiJoJo.com](https://www.hijojo.com): online fund platform for individuals, minimum 30M JPY investable assets
+- [HiJoJo Private Market Solution](https://www.hijojo-partners.com/en/private-market): institutional investors and startups
+
+## Platform
+
+- [Member login](https://members.hijojo.com/login): authenticated member application
+- [Member registration](https://members.hijojo.com/register/memberinfo): account sign-up
+- [Support](https://www.hijojo.com/support): platform support
+- [FAQ](https://www.hijojo.com/faq): frequently asked questions
+
+## Legal
+
+- [Terms of service](https://www.hijojo.com/terms-of-service)
+- [Privacy policy](https://www.hijojo.com/privacy-policy)
+
+## Optional
+
+- [API Evangelist profile](https://apis.io/provider/hijojo-partners/): independent third-party profile of this company's public API surface
+
+---
+generated: 2026-08-22
+method: generated
+source: apis.yml + repo artifacts; https://www.hijojo-partners.com/llms.txt returned 404

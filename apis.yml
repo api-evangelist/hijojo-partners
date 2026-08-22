@@ -1,17 +1,41 @@
 aid: hijojo-partners
 name: HiJoJo Partners
-description: 'HiJoJo Partners is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  HiJoJo Partners Inc. (HiJoJo Partners株式会社) is a Tokyo-based independent asset
+  management and fintech group, established in November 2017 and registered with the
+  Director of the Kanto Local Finance Bureau (No. 3065) for Type II Financial
+  Instruments Business, Investment Management Business, and Investment Advisory and
+  Agency Business. The firm forms, sells and manages funds that give Japanese
+  institutional and individual investors access to late-stage private and pre-IPO
+  companies, and works to develop Japan's secondary market for unlisted shares. It
+  operates three lines: HiJoJo Prime (in-person advisory for investors with 100M JPY
+  or more in investable assets), HiJoJo.com (an online fund platform for individual
+  investors with 30M JPY or more), and HiJoJo Private Market Solution for
+  institutional investors and startups. HiJoJo joined the Nasdaq Private Market
+  investor consortium in 2024 to expand secondary-market access in Japan. Its
+  investor-facing platform is delivered as an authenticated member web application;
+  the company publishes no public API, developer portal, SDK or machine-readable
+  specification of any kind.
+image: https://www.hijojo-partners.com/ogp.jpg
 url: https://raw.githubusercontent.com/api-evangelist/hijojo-partners/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
-x-tier-reason: harvest
+x-tier-reason: no-developer-program
 specificationVersion: '0.20'
 created: '2026-08-22'
 modified: '2026-08-22'
 tags:
 - Company
+- Financial Services
+- Investment Management
+- Private Markets
+- Secondary Markets
+- Pre-IPO
+- Venture Capital
+- Fintech
+- Japan
+- Asset Management
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +43,60 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/hijojo-partners-domain-security.yml
+- type: Conformance
+  url: conformance/hijojo-partners-conformance.yml
+- type: LLMsTxt
+  url: llms/hijojo-partners-llms.txt
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.hijojo-partners.com/
+- type: About
+  url: https://www.hijojo-partners.com/en/about/company
+- type: News
+  url: https://www.hijojo-partners.com/en/news
+- type: Support
+  url: https://www.hijojo.com/support
+- type: FAQ
+  url: https://www.hijojo.com/faq
+- type: SignUp
+  url: https://members.hijojo.com/register/memberinfo
+- type: Login
+  url: https://members.hijojo.com/login
+- type: TermsOfService
+  url: https://www.hijojo.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.hijojo.com/privacy-policy
+- type: Contact
+  url: https://www.hijojo-partners.com/en/inquiry
+- type: Plans
+  url: plans/hijojo-partners-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/hijojo-partners-rate-limits.yml
+x-enrichment:
+  date: '2026-08-22'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    HiJoJo Partners ships an end-user investment platform only - the member application at
+    members.hijojo.com is a login wall with no API behind it that the company documents, and
+    DNS enumeration returns no api., dev., developer., docs., portal. or mcp. host on either
+    hijojo-partners.com or hijojo.com.
+  evidence:
+    - url: https://members.hijojo.com/openapi.json
+      status: 404
+    - url: https://members.hijojo.com/graphql
+      status: 404
+    - url: https://www.hijojo-partners.com/openapi.json
+      status: 404
+    - url: https://www.hijojo-partners.com/llms.txt
+      status: 404
+    - url: https://www.hijojo.com/.well-known/agent-card.json
+      status: 403
+    - url: https://www.hijojo-partners.com/en/about/company
+      status: 200
+  checked: '2026-08-22'

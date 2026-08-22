@@ -1,0 +1,14 @@
+generated: '2026-08-22'
+method: searched
+source: https://www.hijojo-partners.com/en/service
+limit_count: 0
+note: >-
+  No published rate limits, because no public API exists to limit. Contract
+  discovery probed www.hijojo-partners.com, hijojo.com, www.hijojo.com and
+  members.hijojo.com for OpenAPI, Swagger, GraphQL, MCP and /.well-known/
+  surfaces and every path missed (404 on the corporate site, 403 on the
+  CloudFront-fronted platform hosts); DNS enumeration found no api., dev.,
+  developer., docs. or portal. host on either domain. Recorded as limit_count 0 -
+  an honest zero, not an unchecked field.
+rate_limits: []
+headers: []

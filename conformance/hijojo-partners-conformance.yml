@@ -1,0 +1,80 @@
+generated: '2026-08-22'
+method: searched
+source: https://www.hijojo-partners.com/en/about/company
+note: >-
+  HiJoJo Partners publishes no machine-readable API contract, so every API-side
+  standard below is recorded as not conforming on the basis of absence rather than
+  of a failed check - there is nothing to check. What the company does publish is a
+  regulatory posture: it is a licensed Japanese financial instruments business and
+  discloses its registration and self-regulatory memberships on its own site. Those
+  are statutory licences under Japan's Financial Instruments and Exchange Act, not
+  security or privacy certifications; no SOC 2, ISO 27001, PCI DSS or equivalent
+  attestation is published anywhere on the company's public surface, so no
+  Compliance pointer is emitted in apis.yml.
+standards:
+  - id: openapi
+    conforms: false
+    evidence: >-
+      No OpenAPI or Swagger document served. Probed /openapi.json, /openapi.yaml,
+      /swagger.json, /v1/openapi.json, /api/openapi.json, /api-docs on
+      www.hijojo-partners.com (404), hijojo.com (404), www.hijojo.com (404) and
+      members.hijojo.com (404) on 2026-08-22.
+  - id: graphql
+    conforms: false
+    evidence: 'GET/POST https://members.hijojo.com/graphql returned 404 on 2026-08-22.'
+  - id: asyncapi
+    conforms: false
+    evidence: No event, streaming or webhook surface is documented or advertised.
+  - id: oauth2
+    conforms: false
+    evidence: >-
+      /.well-known/oauth-authorization-server returned 404 on the corporate host and
+      403 on the CloudFront-fronted platform hosts; no OAuth documentation exists.
+  - id: oidc
+    conforms: false
+    evidence: '/.well-known/openid-configuration returned 404 (corporate) / 403 (platform).'
+  - id: rfc9457
+    conforms: false
+    evidence: No error contract published.
+  - id: rfc9116
+    conforms: false
+    evidence: >-
+      No /.well-known/security.txt on any host - 404 on www.hijojo-partners.com,
+      403 on hijojo.com and members.hijojo.com.
+  - id: mcp
+    conforms: false
+    evidence: No hosted MCP server found; mcp.hijojo.com does not resolve.
+  - id: a2a
+    conforms: false
+    evidence: >-
+      /.well-known/agent-card.json and /.well-known/agent.json missed on every host
+      (404 corporate, 403 platform). No agent card is published.
+domain_standards:
+  - id: fsa-fiea-type-ii
+    name: Japan Financial Instruments and Exchange Act - Type II Financial Instruments Business
+    conforms: true
+    kind: regulatory-registration
+    evidence: >-
+      "HiJoJo Partners Inc. is registered with the Director of Kanto Local Finance
+      Bureau No. 3065 for Type II Financial Instruments Business, Investment
+      Management Business, and Investment Advisory and Agency Business" - published on
+      https://www.hijojo-partners.com/en/about/company (HTTP 200, 2026-08-22).
+    note: >-
+      A statutory licence to operate, not an API or information-security conformance
+      claim. Recorded because the Kin Score financial-services regulatory layer reads
+      the regime, not because it implies any machine-readable contract.
+  - id: jsda-type-ii-association
+    name: Type II Financial Instruments Firms Association (Japan)
+    conforms: true
+    kind: self-regulatory-membership
+    evidence: >-
+      Membership disclosed on
+      https://www.hijojo-partners.com/en/about/company (HTTP 200, 2026-08-22).
+  - id: jitax-investment-management-association
+    name: Investment Management Association of Japan
+    conforms: true
+    kind: self-regulatory-membership
+    evidence: >-
+      Membership disclosed on
+      https://www.hijojo-partners.com/en/about/company (HTTP 200, 2026-08-22).
+security_certifications: []

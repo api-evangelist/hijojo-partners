@@ -1,0 +1,83 @@
+generated: '2026-08-22'
+method: probed
+source: >-
+  Direct HTTP probes of every host HiJoJo Partners operates: the corporate site
+  (www.hijojo-partners.com), the retail investment platform (www.hijojo.com /
+  hijojo.com) and the authenticated member application (members.hijojo.com).
+note: >-
+  No /.well-known/ document is served on any HiJoJo host. The corporate Webflow
+  site answers 404 for every path. The hijojo.com and members.hijojo.com hosts sit
+  behind a CloudFront edge policy that returns 403 for the entire /.well-known/
+  path prefix, so nothing is served there either. Because no path returned a 200
+  carrying a real document, NO WellKnown or SecurityTxt pointer is emitted in
+  apis.yml - this file records a measured absence, not a presence.
+hosts:
+  - host: www.hijojo-partners.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+  - host: www.hijojo.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 403
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 403
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 403
+        file: null
+      - path: /.well-known/api-catalog
+        status: 403
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 403
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 403
+        file: null
+      - path: /.well-known/agent.json
+        status: 403
+        file: null
+  - host: members.hijojo.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 403
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 403
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 403
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 403
+        file: null
+      - path: /.well-known/api-catalog
+        status: 403
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 403
+        file: null
+      - path: /.well-known/agent.json
+        status: 403
+        file: null

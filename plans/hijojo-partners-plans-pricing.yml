@@ -1,0 +1,27 @@
+generated: '2026-08-22'
+method: searched
+source: https://www.hijojo-partners.com/en/service
+plan_count: 0
+note: >-
+  HiJoJo Partners publishes no API plans or developer pricing because it publishes
+  no API. Its three commercial lines are financial services, not API products:
+  HiJoJo Prime (in-person advisory, minimum investable assets 100M JPY), HiJoJo.com
+  (online fund platform, minimum investable assets 30M JPY) and HiJoJo Private
+  Market Solution (institutional / startup services). Fund-level fees are disclosed
+  per offering inside the authenticated member application at members.hijojo.com and
+  in the statutory pre-contract documents, not on a public pricing page. Recorded as
+  plan_count 0 - a measured absence of API plans, not an unchecked field.
+plans: []
+service_lines:
+  - name: HiJoJo Prime
+    audience: corporations and individual investors with 100M JPY or more in investable assets
+    url: https://www.hijojo-partners.com/en/hijojo-prime
+    api_product: false
+  - name: HiJoJo.com
+    audience: individual investors with 30M JPY or more in investable assets
+    url: https://www.hijojo.com
+    api_product: false
+  - name: HiJoJo Private Market Solution
+    audience: institutional investors and startups
+    url: https://www.hijojo-partners.com/en/private-market
+    api_product: false
