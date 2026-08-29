@@ -16,6 +16,17 @@ description: >-
   investor-facing platform is delivered as an authenticated member web application;
   the company publishes no public API, developer portal, SDK or machine-readable
   specification of any kind.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://www.hijojo-partners.com/ogp.jpg
 url: https://raw.githubusercontent.com/api-evangelist/hijojo-partners/refs/heads/main/apis.yml
 x-type: company
