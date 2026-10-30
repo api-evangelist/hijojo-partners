@@ -64,18 +64,96 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-HiJoJo Partners Inc. (HiJoJo Partners株式会社) is a Tokyo-based independent asset management and
-fintech group, established in November 2017 and registered with the Director of the Kanto Local
-Finance Bureau (No. 3065) for Type II Financial Instruments Business, Investment Management
-Business, and Investment Advisory and Agency Business. The firm forms, sells and manages funds
-that give Japanese institutional and individual investors access to late-stage private and
-pre-IPO companies, and works to develop Japan's secondary market for unlisted shares.
+HiJoJo Partners Inc. (HiJoJo Partners株式会社) is a Tokyo-based independent asset management and fintech group, established in November 2017 and registered with the Director of the Kanto Local Finance Bureau (No. 3065) for Type II Financial Instruments Business, Investment Management Business, and Investment Advisory and Agency Business. The firm forms, sells and manages funds that give Japanese institutional and individual investors access to late-stage private and pre-IPO companies, and works to develop Japan's secondary market for unlisted shares. It operates three lines: HiJoJo Prime (in-person advisory for investors with 100M JPY or more in investable assets), HiJoJo.com (an online fund platform for individual investors with 30M JPY or more), and HiJoJo Private Market Solution for institutional investors and startups. HiJoJo joined the Nasdaq Private Market investor consortium in 2024 to expand secondary-market access in Japan. Its investor-facing platform is delivered as an authenticated member web application; the company publishes no public API, developer portal, SDK or machine-readable specification of any kind.
 
-**No public API.** As of 2026-08-22 the company publishes no developer portal, no OpenAPI /
-GraphQL / AsyncAPI specification, no SDK, no MCP server, no agent card and no `/.well-known/`
-document on any host it operates. Investor-facing functionality is delivered only as an
-authenticated member web application. See `x-coverage` in `apis.yml` for the probes behind that
-statement.
+**Areas:** Company · Financial Services · Investment Management · Private Markets · Secondary Market · Pre-IPO · Venture Capital · Fintech · Japan · Asset Management
 
-- https://www.hijojo-partners.com/
-- https://www.hijojo.com/
+## HiJoJo Partners on APIs.io
+
+Everything profiled for HiJoJo Partners is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/hijojo-partners/](https://apis.io/providers/hijojo-partners/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Hijojo Partners Domain Security](https://apis.io/security/hijojo-partners/hijojo-partners-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Hijojo Partners Plans Pricing](https://apis.io/plans/hijojo-partners/hijojo-partners-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Hijojo Partners Rate Limits](https://apis.io/rate-limits/hijojo-partners/hijojo-partners-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.hijojo-partners.com/)
+- [Sign up](https://members.hijojo.com/register/memberinfo)
+- [Support](https://www.hijojo.com/support)
+- [Blog](https://www.hijojo-partners.com/news)
+- [Terms of service](https://www.hijojo.com/terms-of-service)
+- [Privacy policy](https://www.hijojo.com/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 14.4** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 56.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 34.2 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 18.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/hijojo-partners/](https://apis.io/providers/hijojo-partners/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for HiJoJo Partners: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/hijojo-partners/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
